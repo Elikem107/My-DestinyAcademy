@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destiny Academy | Basic 5 Science</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #001a1f, #004466);
+      color: #e0f0ff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a3e0ff;
+      text-shadow: 0 0 8px rgba(163, 224, 255, 0.6);
+    }
+
+    .lesson-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 12px rgba(0, 150, 255, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .lesson-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 16px rgba(0, 150, 255, 0.4);
+    }
+
+    .lesson-card h2 {
+      font-size: 1.5rem;
+      color: #8ed8ff;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .strand {
+      margin-bottom: 1.5rem;
+    }
+
+    .strand > strong {
+      font-size: 1.2rem;
+      color: #a3e0ff;
+    }
+
+    .substrand {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .substrand em {
+      color: #c6ebff;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .topics {
+      margin-left: 1.5rem;
+      margin-top: 0.3rem;
+    }
+
+    .topics a {
+      color: #e0f0ff;
+      text-decoration: none;
+      display: block;
+      margin: 0.2rem 0;
+      transition: color 0.2s ease;
+    }
+
+    .topics a:hover {
+      color: #8ed8ff;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: #9ddfff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Basic 5 Science </h1>
+  </header>
+
+  <main>
+    <!-- STRAND 1 -->
+    <section class="lesson-card">
+      <h2>Strand 1: Living and Non-Living Things</h2>
+      <ul>
+        <li class="strand">
+          <em>Sub-strand 1: Diversity of Life</em>
+          <ul class="topics">
+            <li><a href="lessons/life-processes.html">Life Processes</a></li>
+            <li><a href="lessons/living-once-lived-never-lived.html">Living, Once-Lived, Never-Lived Things</a></li>
+            <li><a href="lessons/organisms-and-habitats.html">Organisms and Habitats</a></li>
+          </ul>
+        </li>
+
+        <li class="strand">
+          <em>Sub-strand 2: Plants and Animals</em>
+          <ul class="topics">
+            <li><a href="lessons/parts-of-plants.html">Parts of Plants</a></li>
+            <li><a href="lessons/life-cycle-of-plants.html">Life Cycle of Plants</a></li>
+            <li><a href="lessons/respiratory-system.html">Respiratory System</a></li>
+          </ul>
+        </li>
+
+        <li class="strand">
+          <em>Sub-strand 3: Health and Sanitation</em>
+          <ul class="topics">
+            <li><a href="lessons/personal-hygiene-and-sanitation.html">Personal Hygiene and Sanitation</a></li>
+            <li><a href="lessons/diseases-and-infections.html">Diseases and Infections</a></li>
+            <li><a href="lessons/environmental-conservation.html">Environmental Conservation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- STRAND 2 -->
+    <section class="lesson-card">
+      <h2>Strand 2: Matter and Energy</h2>
+      <ul>
+        <li class="strand">
+          <em>Sub-strand 1: Materials and Mixtures</em>
+          <ul class="topics">
+            <li><a href="lessons/properties-of-materials.html">Properties of Materials</a></li>
+            <li><a href="lessons/reversible-and-irreversible-changes.html">Reversible and Irreversible Changes</a></li>
+            <li><a href="lessons/formation-and-separation-of-mixtures.html">Formation & Separation of Mixtures</a></li>
+          </ul>
+        </li>
+
+        <li class="strand">
+          <em>Sub-strand 2: Energy and Heat</em>
+          <ul class="topics">
+            <li><a href="lessons/energy-transformation.html">Energy Transformation</a></li>
+            <li><a href="lessons/heat-and-temperature.html">Heat and Temperature</a></li>
+            <li><a href="lessons/friction.html">Friction</a></li>
+          </ul>
+        </li>
+
+        <li class="strand">
+          <em>Sub-strand 3: Electricity and Circuits</em>
+          <ul class="topics">
+            <li><a href="lessons/electricity.html">Electricity</a></li>
+            <li><a href="lessons/electric-circuit.html">Electric Circuit</a></li>
+            <li><a href="lessons/electrical-safety.html">Safety in Electrical Use</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- STRAND 3 -->
+    <section class="lesson-card">
+      <h2>Strand 3: Earth and Space</h2>
+      <ul>
+        <li class="strand">
+          <em>Sub-strand 1: Earth and Environment</em>
+          <ul class="topics">
+            <li><a href="lessons/water-pollution.html">Water Pollution</a></li>
+            <li><a href="lessons/climate-change.html">Climate Change</a></li>
+            <li><a href="lessons/environmental-conservation.html">Environmental Conservation</a></li>
+          </ul>
+        </li>
+
+        <li class="strand">
+          <em>Sub-strand 2: The Sun and Solar System</em>
+          <ul class="topics">
+            <li><a href="lessons/rotation-and-revolution.html">Rotation and Revolution</a></li>
+            <li><a href="lessons/solar-system.html">Solar System</a></li>
+            <li><a href="lessons/benefits-of-the-sun.html">Benefits of the Sun to Earth</a></li>
+          </ul>
+        </li>
+
+        <li class="strand">
+          <em>Sub-strand 3: Industry and Technology</em>
+          <ul class="topics">
+            <li><a href="lessons/local-industries.html">Local Industries</a></li>
+            <li><a href="lessons/formation-of-clouds.html">Formation of Clouds</a></li>
+            <li><a href="lessons/scientific-applications.html">Scientific Applications</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

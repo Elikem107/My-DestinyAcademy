@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destiny Academy</title>
+<style>
+  body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  svg {
+    width: 80%;
+    max-width: 800px;
+  }
+
+  text {
+    font-family: 'Poppins', cursive;
+    font-size: 48px;
+    fill: none;
+    stroke: #e0f0ff;
+    stroke-width: 1.5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 6s ease forwards;
+    filter: drop-shadow(0 0 10px #8fcfff);
+  }
+
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+</head>
+<body>
+  <svg viewBox="0 0 1200 200">
+    <text x="50%" y="50%" text-anchor="middle">
+      Welcome to My Destiny Academy
+    </text>
+  </svg>
+  <script>
+    setTimeout(() => {
+    window.location.href = "home.html"; // 👉 Change this to your next page
+  }, 3000);
+  </script>
+</body>
+</html>

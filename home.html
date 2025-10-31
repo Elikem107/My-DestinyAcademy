@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destiny Academy</title>
+<style>
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #e0f0ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px #8fcfff;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .card {
+    background: #111;
+    border: 2px solid #8fcfff;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px rgba(143, 207, 255, 0.3);
+  }
+
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 30px #8fcfff;
+  }
+</style>
+</head>
+<body>
+
+  <h1>What will you like to learn?</h1>
+
+  <div class="grid">
+    <a href="math.html" class="card">Mathematics</a>
+    <a href="eng.html" class="card">English</a>
+    <a href="history.html" class="card">History</a>
+    <a href="science.html" class="card">Science</a>
+    <a href="art.html" class="card">RME</a>
+    <a href="ict.html" class="card">ICT</a>
+  </div>
+
+</body>
+</html>
