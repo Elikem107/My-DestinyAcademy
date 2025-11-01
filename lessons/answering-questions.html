@@ -146,6 +146,68 @@
       <li>options, correct, answer, eliminate context, clues, tense, agreement, concise, complete, accurate</li>
     </ul>
 
+    <!-- Add this below your existing lesson note content, before </body> -->
+
+<div class="content">
+  <h2>Practice Questions: Answering Questions</h2>
+  <p>Try to answer the questions on your own first. Click "Show Answers" to check your responses.</p>
+
+  <ol>
+    <!-- Wh-Questions -->
+    <li>Who wrote the novel "Harry Potter"?</li>
+    <li>What is the capital city of France?</li>
+    <li>When do we usually celebrate New Year?</li>
+    <li>Where is the Great Wall located?</li>
+    <li>Why do plants need sunlight?</li>
+    <li>How do birds fly?</li>
+
+    <!-- Yes/No Questions -->
+    <li>Is water a liquid at room temperature?</li>
+    <li>Do cats bark?</li>
+
+    <!-- Multiple Choice -->
+    <li>Which planet is known as the Red Planet?<br>
+      a) Venus<br>
+      b) Mars<br>
+      c) Jupiter
+    </li>
+
+    <!-- Fill-in-the-Blank / Short Answer -->
+    <li>The sun rises in the ______.</li>
+  </ol>
+
+  <button class="btn" onclick="toggleAnswers()">Show Answers</button>
+
+  <div id="answers" style="display:none; margin-top:1rem;">
+    <h3>Answers:</h3>
+    <ol>
+      <li>J.K. Rowling</li>
+      <li>Paris</li>
+      <li>January 1st</li>
+      <li>China</li>
+      <li>Because they need energy to grow</li>
+      <li>By flapping their wings and using air currents</li>
+      <li>Yes</li>
+      <li>No</li>
+      <li>Mars</li>
+      <li>East</li>
+    </ol>
+  </div>
+
+  <script>
+    function toggleAnswers() {
+      const answersDiv = document.getElementById('answers');
+      if (answersDiv.style.display === 'none') {
+        answersDiv.style.display = 'block';
+      } else {
+        answersDiv.style.display = 'none';
+      }
+    }
+  </script>
+</div>
+
+
   </div>
 </body>
 </html>
+
