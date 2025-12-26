@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic 5 History | Destiny Academy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  a { text-decoration: none; color: #001024; }
+  a:hover { color: #0066ff; text-decoration: underline; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #001024;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { font-size: 2.5rem; text-shadow: 0 0 5px #64b5f6; margin-bottom: 0.5rem; }
+  .back-btn { margin-bottom: 2rem; color: #001024; font-weight: 600; transition: 0.3s; display: inline-block; }
+  .back-btn:hover { color: #0066ff; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .lesson-card {
+    background: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(100,181,246,0.3);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+
+  .lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #64b5f6, 0 0 40px #81d4fa;
+    border-color: #64b5f6;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #001024;
+  }
+
+  .substrand em {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0066ff;
+    display: block;
+  }
+
+  .topics { margin-left: 1.2rem; }
+  .topics li { margin-bottom: 0.3rem; }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  .lesson-card:nth-child(1) { animation-delay: 0.2s; }
+  .lesson-card:nth-child(2) { animation-delay: 0.4s; }
+  .lesson-card:nth-child(3) { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Basic 5 History </h1>
+  <a href="select.html" class="back-btn">← Back to Lesson Menu</a>
+</header>
+
+<div class="grid">
+
+  <!-- Strand 1 -->
+  <div class="lesson-card">
+    <h2>Strand 1: Our Heritage & Early Life</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Early Life</em>
+        <ul class="topics">
+          <li><a href="lessons/ancestors-before-1400s.html">How Our Ancestors Lived Before the 1400s Compared to Now</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Slave Trade</em>
+        <ul class="topics">
+          <li><a href="lessons/slave-trade-16th-century.html">Slave Trade in the 16th Century</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Contributions of Prominent Ghanaians</em>
+        <ul class="topics">
+          <li><a href="lessons/abedi-pele.html">Abedi Pele</a></li>
+          <li><a href="lessons/reg-armattoe.html">REG Armattoe</a></li>
+          <li><a href="lessons/kofi-annan.html">Kofi Annan</a></li>
+          <li><a href="lessons/osibisa.html">Osibisa</a></li>
+          <li><a href="lessons/el-anatsu.html">El Anatsu</a></li>
+          <li><a href="lessons/david-adjaye.html">David Adjaye</a></li>
+          <li><a href="lessons/oswald-boateng.html">Oswald Boateng</a></li>
+          <li><a href="lessons/efua-sutherland.html">Efua Sutherland</a></li>
+          <li><a href="lessons/prof-allotey.html">Prof. Allotey</a></li>
+          <li><a href="lessons/frimpong-boateng.html">Frimpong Boateng</a></li>
+          <li><a href="lessons/azumah-nelson.html">Azumah Nelson</a></li>
+          <li><a href="lessons/dr-ephraim-amu.html">Dr Ephraim Amu</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 2 -->
+  <div class="lesson-card">
+    <h2>Strand 2: Development During the Colonial Era</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Education</em>
+        <ul class="topics">
+          <li><a href="lessons/education-colonial-era.html">Development of Education During the Colonial Era</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Health</em>
+        <ul class="topics">
+          <li><a href="lessons/health-colonial-era.html">Development of Health During the Colonial Era</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Economy</em>
+        <ul class="topics">
+          <li><a href="lessons/economy-colonial-era.html">Development of Economy During the Colonial Era</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 3 -->
+  <div class="lesson-card">
+    <h2>Strand 3: Early Protest & Political Movements</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Protest Movements Before 1945</em>
+        <ul class="topics">
+          <li><a href="lessons/early-protest-ghana.html">Early Protest Movement in Ghana Before 1945</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Key Leaders & Associations</em>
+        <ul class="topics">
+          <li><a href="lessons/john-mensah-sarbah.html">Role of John Mensah Sarbah in the ARPS-1897</a></li>
+          <li><a href="lessons/joseph-ephraim-casely-hayford.html">Role of Joseph Ephraim Casely-Hayford in the NCBWA</a></li>
+          <li><a href="lessons/jb-danquah.html">Role of JB Danquah in the GCYC</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Struggles Leading to Independence</em>
+        <ul class="topics">
+          <li><a href="lessons/1948-riots.html">1948 Riots</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

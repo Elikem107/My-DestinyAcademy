@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic 5 Religious Education | Destiny Academy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  a { text-decoration: none; color: #001024; }
+  a:hover { color: #0066ff; text-decoration: underline; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #001024;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { font-size: 2.5rem; text-shadow: 0 0 5px #64b5f6; margin-bottom: 0.5rem; }
+  .back-btn { margin-bottom: 2rem; color: #001024; font-weight: 600; transition: 0.3s; display: inline-block; }
+  .back-btn:hover { color: #0066ff; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .lesson-card {
+    background: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(100,181,246,0.3);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+
+  .lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #64b5f6, 0 0 40px #81d4fa;
+    border-color: #64b5f6;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #001024;
+  }
+
+  .substrand em {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0066ff;
+    display: block;
+  }
+
+  .topics { margin-left: 1.2rem; }
+  .topics li { margin-bottom: 0.3rem; }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  .lesson-card:nth-child(1) { animation-delay: 0.2s; }
+  .lesson-card:nth-child(2) { animation-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Basic 5 Religious Education</h1>
+  <a href="select.html" class="back-btn">← Back to Lesson Menu</a>
+</header>
+
+<div class="grid">
+
+  <!-- Strand 1 -->
+  <div class="lesson-card">
+    <h2>Strand 1: God and Worship</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: God’s Qualities & Human Uniqueness</em>
+        <ul class="topics">
+          <li><a href="lessons/uniqueness-of-mankind.html">Uniqueness of Mankind</a></li>
+          <li><a href="lessons/qualities-of-god.html">Qualities of God</a></li>
+          <li><a href="lessons/maintenance-of-god-given-form.html">Maintenance of God-given Form and Color</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Worship Practices</em>
+        <ul class="topics">
+          <li><a href="lessons/moral-importance-of-worship.html">Moral Importance of Worship</a></li>
+          <li><a href="lessons/moral-importance-of-religious-songs.html">Moral Importance of Religious Songs & Recitations</a></li>
+          <li><a href="lessons/religious-festivals.html">Religious Festivals of the 3 Major Religions</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Religious Leadership</em>
+        <ul class="topics">
+          <li><a href="lessons/ministry-of-leaders.html">Ministry of Leaders of the 3 Major Religions</a></li>
+          <li><a href="lessons/moral-lessons-from-leaders.html">Moral Lessons from Religious Leaders</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 2 -->
+  <div class="lesson-card">
+    <h2>Strand 2: Family Life</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Commitment to Family</em>
+        <ul class="topics">
+          <li><a href="lessons/committed-family-member.html">The Need to be a Committed Member of the Family</a></li>
+          <li><a href="lessons/parents-as-discipline-sources.html">Parents as Sources of Discipline & Character Formation</a></li>
+          <li><a href="lessons/responsible-behavior-home.html">Need to Demonstrate Responsible Behavior at Home</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Family and Environment</em>
+        <ul class="topics">
+          <li><a href="lessons/effects-of-human-activities.html">Effects of Human Activities on the Environment</a></li>
+          <li><a href="lessons/care-for-environment.html">Care for the Environment</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

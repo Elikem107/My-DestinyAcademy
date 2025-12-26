@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICT - Basic 5 | Destiny Academy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  a { text-decoration: none; color: #001024; }
+  a:hover { color: #0066ff; text-decoration: underline; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #001024;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { font-size: 2.5rem; text-shadow: 0 0 5px #64b5f6; margin-bottom: 0.5rem; }
+  .back-btn { margin-bottom: 2rem; color: #001024; font-weight: 600; transition: 0.3s; display: inline-block; }
+  .back-btn:hover { color: #0066ff; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .lesson-card {
+    background: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(100,181,246,0.3);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+
+  .lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #64b5f6, 0 0 40px #81d4fa;
+    border-color: #64b5f6;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #001024;
+  }
+
+  .substrand {
+    margin-top: 0.5rem;
+  }
+
+  .substrand em {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0066ff;
+    display: block;
+  }
+
+  .topics { margin-left: 1.2rem; }
+  .topics li { margin-bottom: 0.3rem; }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  .lesson-card:nth-child(1) { animation-delay: 0.2s; }
+  .lesson-card:nth-child(2) { animation-delay: 0.4s; }
+  .lesson-card:nth-child(3) { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ICT - Basic 5</h1>
+  <a href="select.html" class="back-btn">← Back to Lesson Menu</a>
+</header>
+
+<div class="grid">
+
+  <!-- Strand 1 -->
+  <div class="lesson-card">
+    <h2>Strand 1: Fundamentals of ICT</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Computer Basics</em>
+        <ul class="topics">
+          <li><a href="lessons/generations-of-computers.html">Generations of Computers</a></li>
+          <li><a href="lessons/digital-and-analogue-devices.html">Digital and Analogue Devices</a></li>
+          <li><a href="lessons/data-processing.html">Data Processing</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Computer Hardware</em>
+        <ul class="topics">
+          <li><a href="lessons/output-devices.html">Output Devices</a></li>
+          <li><a href="lessons/mouse-and-keyboard.html">Mouse and Keyboard</a></li>
+          <li><a href="lessons/health-and-safety.html">Health and Safety in Using ICT Tools</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Computer Software</em>
+        <ul class="topics">
+          <li><a href="lessons/windows-interface.html">Windows Interface</a></li>
+          <li><a href="lessons/ms-word.html">Microsoft Word</a></li>
+          <li><a href="lessons/ms-powerpoint.html">Microsoft PowerPoint</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 2 -->
+  <div class="lesson-card">
+    <h2>Strand 2: Application of ICT</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Productivity Tools</em>
+        <ul class="topics">
+          <li><a href="lessons/ms-excel.html">Microsoft Excel</a></li>
+          <li><a href="lessons/ms-powerpoint.html">Microsoft PowerPoint</a></li>
+          <li><a href="lessons/ms-word.html">Microsoft Word</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: Data and Communication</em>
+        <ul class="topics">
+          <li><a href="lessons/the-web.html">The Web</a></li>
+          <li><a href="lessons/email-and-messaging.html">Email and Messaging</a></li>
+          <li><a href="lessons/cloud-storage.html">Cloud Storage</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Internet and Technology</em>
+        <ul class="topics">
+          <li><a href="lessons/iot.html">Internet of Things (IoT)</a></li>
+          <li><a href="lessons/technology-in-the-community.html">Technology in the Community</a></li>
+          <li><a href="lessons/internet-safety.html">Internet Safety</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 3 -->
+  <div class="lesson-card">
+    <h2>Strand 3: Responsible Use of ICT</h2>
+    <ul>
+      <li class="substrand"><em>Sub-strand 1: Ethics and Safety</em>
+        <ul class="topics">
+          <li><a href="lessons/health-and-safety.html">Health and Safety in ICT</a></li>
+          <li><a href="lessons/cyberbullying.html">Cyberbullying Awareness</a></li>
+          <li><a href="lessons/digital-etiquette.html">Digital Etiquette</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 2: ICT and Society</em>
+        <ul class="topics">
+          <li><a href="lessons/technology-in-the-community.html">Technology in the Community</a></li>
+          <li><a href="lessons/importance-of-ict.html">Importance of ICT in Daily Life</a></li>
+          <li><a href="lessons/ict-in-education.html">ICT in Education</a></li>
+        </ul>
+      </li>
+      <li class="substrand"><em>Sub-strand 3: Future of ICT</em>
+        <ul class="topics">
+          <li><a href="lessons/iot.html">Internet of Things (IoT)</a></li>
+          <li><a href="lessons/artificial-intelligence.html">Artificial Intelligence (AI)</a></li>
+          <li><a href="lessons/future-technologies.html">Emerging Technologies</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

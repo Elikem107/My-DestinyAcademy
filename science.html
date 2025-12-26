@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic 5 Science | Destiny Academy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  a { text-decoration: none; color: #001024; }
+  a:hover { color: #0066ff; text-decoration: underline; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #001024;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  header { margin-bottom: 2rem; text-align: center; }
+  h1 { font-size: 2.5rem; text-shadow: 0 0 5px #64b5f6; margin-bottom: 0.5rem; }
+  .back-btn { margin-bottom: 2rem; color: #001024; font-weight: 600; transition: 0.3s; display: inline-block; }
+  .back-btn:hover { color: #0066ff; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .lesson-card {
+    background: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(100,181,246,0.3);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+
+  .lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #64b5f6, 0 0 40px #81d4fa;
+    border-color: #64b5f6;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #001024;
+  }
+
+  .strand em {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0066ff;
+    display: block;
+  }
+
+  .topics { margin-left: 1.2rem; }
+  .topics li { margin-bottom: 0.3rem; }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  /* staggered animations */
+  .lesson-card:nth-child(1) { animation-delay: 0.2s; }
+  .lesson-card:nth-child(2) { animation-delay: 0.4s; }
+  .lesson-card:nth-child(3) { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Basic 5 Science</h1>
+  <a href="select.html" class="back-btn">← Back to Lesson Menu</a>
+</header>
+
+<div class="grid">
+
+  <!-- Strand 1: Living and Non-Living Things -->
+  <div class="lesson-card">
+    <h2>Strand 1: Living & Non-Living Things</h2>
+    <ul>
+      <li class="strand"><em>Sub-strand 1: Diversity of Life</em>
+        <ul class="topics">
+          <li><a href="lessons/life-processes.html">Life Processes</a></li>
+          <li><a href="lessons/living-once-lived-never-lived.html">Living, Once-Lived, Never-Lived Things</a></li>
+          <li><a href="lessons/organisms-and-habitats.html">Organisms and Habitats</a></li>
+        </ul>
+      </li>
+      <li class="strand"><em>Sub-strand 2: Plants and Animals</em>
+        <ul class="topics">
+          <li><a href="lessons/parts-of-plants.html">Parts of Plants</a></li>
+          <li><a href="lessons/life-cycle-of-plants.html">Life Cycle of Plants</a></li>
+          <li><a href="lessons/respiratory-system.html">Respiratory System</a></li>
+        </ul>
+      </li>
+      <li class="strand"><em>Sub-strand 3: Health and Sanitation</em>
+        <ul class="topics">
+          <li><a href="lessons/personal-hygiene-and-sanitation.html">Personal Hygiene and Sanitation</a></li>
+          <li><a href="lessons/diseases-and-infections.html">Diseases and Infections</a></li>
+          <li><a href="lessons/environmental-conservation.html">Environmental Conservation</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 2: Matter and Energy -->
+  <div class="lesson-card">
+    <h2>Strand 2: Matter & Energy</h2>
+    <ul>
+      <li class="strand"><em>Sub-strand 1: Materials and Mixtures</em>
+        <ul class="topics">
+          <li><a href="lessons/properties-of-materials.html">Properties of Materials</a></li>
+          <li><a href="lessons/reversible-and-irreversible-changes.html">Reversible and Irreversible Changes</a></li>
+          <li><a href="lessons/formation-and-separation-of-mixtures.html">Formation & Separation of Mixtures</a></li>
+        </ul>
+      </li>
+      <li class="strand"><em>Sub-strand 2: Energy and Heat</em>
+        <ul class="topics">
+          <li><a href="lessons/energy-transformation.html">Energy Transformation</a></li>
+          <li><a href="lessons/heat-and-temperature.html">Heat and Temperature</a></li>
+          <li><a href="lessons/friction.html">Friction</a></li>
+        </ul>
+      </li>
+      <li class="strand"><em>Sub-strand 3: Electricity & Circuits</em>
+        <ul class="topics">
+          <li><a href="lessons/electricity.html">Electricity</a></li>
+          <li><a href="lessons/electric-circuit.html">Electric Circuit</a></li>
+          <li><a href="lessons/electrical-safety.html">Safety in Electrical Use</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Strand 3: Earth and Space -->
+  <div class="lesson-card">
+    <h2>Strand 3: Earth & Space</h2>
+    <ul>
+      <li class="strand"><em>Sub-strand 1: Earth & Environment</em>
+        <ul class="topics">
+          <li><a href="lessons/water-pollution.html">Water Pollution</a></li>
+          <li><a href="lessons/climate-change.html">Climate Change</a></li>
+          <li><a href="lessons/environmental-conservation.html">Environmental Conservation</a></li>
+        </ul>
+      </li>
+      <li class="strand"><em>Sub-strand 2: The Sun & Solar System</em>
+        <ul class="topics">
+          <li><a href="lessons/rotation-and-revolution.html">Rotation & Revolution</a></li>
+          <li><a href="lessons/solar-system.html">Solar System</a></li>
+          <li><a href="lessons/benefits-of-the-sun.html">Benefits of the Sun to Earth</a></li>
+        </ul>
+      </li>
+      <li class="strand"><em>Sub-strand 3: Industry & Technology</em>
+        <ul class="topics">
+          <li><a href="lessons/local-industries.html">Local Industries</a></li>
+          <li><a href="lessons/formation-of-clouds.html">Formation of Clouds</a></li>
+          <li><a href="lessons/scientific-applications.html">Scientific Applications</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

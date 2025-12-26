@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic 5 English | Destiny Academy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  a { text-decoration: none; color: #001024; }
+  a:hover { color: #0066ff; text-decoration: underline; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #001024;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  header { margin-bottom: 2rem; text-align: center; }
+  h1 { font-size: 2.5rem; text-shadow: 0 0 5px #64b5f6; margin-bottom: 0.5rem; }
+  .back-btn { margin-bottom: 2rem; color: #001024; font-weight: 600; transition: 0.3s; display: inline-block; }
+  .back-btn:hover { color: #0066ff; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .lesson-card {
+    background: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(100,181,246,0.3);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+
+  .lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #64b5f6, 0 0 40px #81d4fa;
+    border-color: #64b5f6;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #001024;
+  }
+
+  .strand h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #001024;
+    text-align: left;
+  }
+
+  .sub-strand { margin-bottom: 1rem; }
+  .sub-strand strong { display: block; margin-bottom: 0.5rem; color: #0066ff; }
+  .sub-strand ul { list-style-type: circle; padding-left: 1.2rem; }
+  .sub-strand li { margin-bottom: 0.3rem; }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  .lesson-card:nth-child(1) { animation-delay: 0.2s; }
+  .lesson-card:nth-child(2) { animation-delay: 0.4s; }
+  .lesson-card:nth-child(3) { animation-delay: 0.6s; }
+  .lesson-card:nth-child(4) { animation-delay: 0.8s; }
+  .lesson-card:nth-child(5) { animation-delay: 1s; }
+  .lesson-card:nth-child(6) { animation-delay: 1.2s; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Basic 5 English</h1>
+  <a href="select.html" class="back-btn">← Back to Lesson Menu</a>
+</header>
+
+<div class="grid">
+
+  <!-- Strand 1: Reading and Comprehension -->
+  <div class="lesson-card">
+    <h2>Strand 1: Reading & Comprehension</h2>
+
+    <div class="sub-strand">
+      <strong>1.1 Comprehension Skills</strong>
+      <ul>
+        <li><a href="lessons/comprehension-passages.html">Comprehension Passages</a></li>
+        <li><a href="lessons/answering-questions.html">Answering Questions</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-strand">
+      <strong>1.2 Literature & Creative Reading</strong>
+      <ul>
+        <li><a href="lessons/patriotic-songs.html">Patriotic Songs, Poems and Values</a></li>
+        <li><a href="lessons/stories.html">Stories</a></li>
+        <li><a href="lessons/drama.html">Drama</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-strand">
+      <strong>1.3 Descriptive & Functional Writing</strong>
+      <ul>
+        <li><a href="lessons/descriptive-essays.html">Descriptive Essays</a></li>
+        <li><a href="lessons/letter-writing.html">Letter Writing</a></li>
+        <li><a href="lessons/report-writing.html">Simple Reports</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Strand 2: Grammar and Structure -->
+  <div class="lesson-card">
+    <h2>Strand 2: Grammar & Structure</h2>
+
+    <div class="sub-strand">
+      <strong>2.1 Parts of Speech</strong>
+      <ul>
+        <li><a href="lessons/nouns-verbs.html">Nouns & Verbs</a></li>
+        <li><a href="lessons/pronouns-adjectives.html">Pronouns & Adjectives</a></li>
+        <li><a href="lessons/adverbs-conjunctions.html">Adverbs, Conjunctions & Prepositions</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-strand">
+      <strong>2.2 Sentence Construction</strong>
+      <ul>
+        <li><a href="lessons/question-tags.html">Question Tags</a></li>
+        <li><a href="lessons/commands-instructions.html">Commands, Instructions & Directions</a></li>
+        <li><a href="lessons/sentence-order.html">Sentence Arrangement</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-strand">
+      <strong>2.3 Mechanics of English</strong>
+      <ul>
+        <li><a href="lessons/punctuation.html">Punctuation</a></li>
+        <li><a href="lessons/capitalization.html">Capitalization</a></li>
+        <li><a href="lessons/sentence-correction.html">Sentence Correction</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Strand 3: Vocabulary and Phonics -->
+  <div class="lesson-card">
+    <h2>Strand 3: Vocabulary & Phonics</h2>
+
+    <div class="sub-strand">
+      <strong>3.1 Phonics & Pronunciation</strong>
+      <ul>
+        <li><a href="lessons/phonemes.html">Phonemes & Letter Sounds</a></li>
+        <li><a href="lessons/syllables.html">Syllables & Word Stress</a></li>
+        <li><a href="lessons/pronunciation.html">Pronunciation Practice</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-strand">
+      <strong>3.2 Vocabulary Development</strong>
+      <ul>
+        <li><a href="lessons/synonyms-antonyms.html">Synonyms & Antonyms</a></li>
+        <li><a href="lessons/homophones.html">Homophones & Homonyms</a></li>
+        <li><a href="lessons/word-formation.html">Word Formation</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-strand">
+      <strong>3.3 Word Usage in Context</strong>
+      <ul>
+        <li><a href="lessons/using-words.html">Using Words in Sentences</a></li>
+        <li><a href="lessons/context-clues.html">Context Clues</a></li>
+        <li><a href="lessons/spelling.html">Spelling & Meanings</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
